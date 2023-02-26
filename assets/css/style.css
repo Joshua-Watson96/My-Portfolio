@@ -1,13 +1,57 @@
+*{
+    box-sizing: border-box;
+}
 
-header{
+
+ 
+.header {
+    font-size: 20px;
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #000000;
-    color: wheat;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    background-color: wheat;
+    color: darkblue;
+    display: inline-block;
+    width: 100%;
  }
 
-.foli {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: lightblue;
+ 
 
+.header h1 .foli {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: red;
+
+ }
+
+ .header nav a
+ {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ;
+    font-size: 20px;
+    
+ }
+
+ .header ul 
+ { 
+    list-style-type: inline;
+}
+
+.header nav ul li  {
+    display: inline-block;
+    margin-left: 25px;
+}
+ /*nav a 
+ {
+padding: 14px 50px;
+width: 100%;
+ }
+*/
+
+
+ 
+
+ @media screen and (max-width: 768px) {
+    main,
+    nav {
+        flex-direction: column;
+    }
+    
  }
