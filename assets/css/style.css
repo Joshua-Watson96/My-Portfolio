@@ -1,49 +1,65 @@
+/*sets the box sizing border, padding and margin */
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
+/*sets the body elements background colour */
+body
 
- 
+ /*sets the header elements properties */
 .header {
-    font-size: 20px;
-    padding: 20px;
     font-family: Georgia, Times, 'Times New Roman', serif;
-    background-color: wheat;
     color: darkblue;
-    display: inline-block;
-    width: 100%;
+    text-align: center;
  }
 
- 
-
+ .header h1 { 
+    display: inline;
+    font-size: 20px;
+ }
 .header h1 .foli {
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    color: red;
+     color: red;
+}
 
- }
-
- .header nav a
+.header nav ul li {
+    position: relative;
+    display: inline-block;
+    padding-top: 15px;
+    margin-right: 20px; 
+    
+    
+}
+ .header a
  {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ;
     font-size: 20px;
-    
+    color: white;
  }
 
- .header ul 
- { 
-    list-style-type: inline;
-}
 
-.header nav ul li  {
-    display: inline-block;
-    margin-left: 25px;
+.hero {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-size: cover;
+    background-position: center;
+
 }
- /*nav a 
- {
-padding: 14px 50px;
-width: 100%;
+ .aboutme {
+    width:100%;
+    background-color: wheat;
  }
-*/
+.aboutme h2 {
+
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+ 
+p {
+    font-size: 16;
+}
 
 
  
