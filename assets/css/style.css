@@ -1,73 +1,197 @@
 /*sets the box sizing border, padding and margin */
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 /*sets the body elements background colour */
-body
-
- /*sets the header elements properties */
-.header {
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    color: darkblue;
-    text-align: center;
- }
-
- .header h1 { 
-    display: inline;
-    font-size: 20px;
- }
-.header h1 .foli {
-     color: red;
+body {
+    background-color: black;
+    color: white;
 }
 
+/*sets the header elements properties */
+.header {
+    background-color: black;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    text-align: center;
+    background-image: url("../images/bali.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    margin-bottom: 30px;
+}
+
+/* sets header h1 display and font-size */
+.header h1 {
+    display: inline;
+    font-size: 20px;
+}
+
+/* sets .foli part of header h1 to colour red */
+.header h1 .foli {
+    color: red;
+}
+
+/* sets nav, ul and li properties */
 .header nav ul li {
     position: relative;
     display: inline-block;
     padding-top: 15px;
-    margin-right: 20px; 
-    
-    
+    margin-right: 20px;
 }
- .header a
- {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ;
+
+/* sets header a properties */
+.header a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    ;
     font-size: 20px;
     color: white;
- }
+}
 
-
-.hero {
+/* sets background-image properties */
+.bali {
     height: 250px;
     width: 100%;
     margin-bottom: 25px;
     background-size: cover;
     background-position: center;
-
 }
- .aboutme {
-    width:100%;
-    background-color: wheat;
- }
+
+/* sets properties for h2 text above background-image */
+.bali h2 {
+    float: right;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+}
+
+/* Sets properties for content */
+.content {
+    width: 100%;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* Sets properties for about me's h2 */
 .aboutme h2 {
 
     font-size: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
- 
+}
+
+/*sets properties for p */
 p {
-    font-size: 16;
+    color: white;
+    font-size: 30px;
+    width: 60%;
+    margin-left: 50px;
+}
+
+/* sets propertes for float-right */
+.float-right {
+    float: right;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    max-height: 300px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 10px;
+    flex: 0 0 300px;
+    transform: rotate(8deg);
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 20px;
+}
+
+/* sets properties for projects */
+.projects {
+    width: 49.54%;
+    display: inline-block;
+}
+
+/* sets properties for box */
+.box {
+    width: 100%;
+    height: 200px;
+    display: inline-block;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+
+/* sets h3 properties */
+h3 {
+    background-color: white;
+    bottom: 0;
+    color: black;
+}
+
+/* sets properties for a after being visited */
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+ 
+/* Sets main-projects image properties */
+.main-project img{
+    width: 100%;
+    height: 300px;
+    background-size: 100%;
+} 
+
+/* sets project-2s image */
+.project-2{
+    background-image: url("../images/calculator.png");
+    
+}
+
+/*sets Project-3s image */
+.project-3{
+    background-image: url("http://via.placeholder.com/200x200");
+}
+
+/* sets properties for About-Me section  */
+#About-Me {
+    display: inline-block;
+    max-height: 300px;
+    color: white;
+    width: 100%;
+    margin-bottom: 200px;
+
+}
+/* sets properties for subheadings h2 */
+.subheading h2 {
+    color: black;
+    font-size: 30px;
+    background-color: aqua;
+    margin-bottom: 40px;
+}
+
+/* sets properties for Contact me Li */
+#Contact-Me li{
+    margin-bottom: 15px;
+    list-style-position: inline;
 }
 
 
- 
 
- @media screen and (max-width: 768px) {
+/* sets the color and text placement for the footer */
+footer {
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+}
+
+
+/* sets websites responsiveness */
+@media screen and (max-width: 768px) {
+
     main,
     nav {
         flex-direction: column;
     }
-    
- }
+
+}
